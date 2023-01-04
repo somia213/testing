@@ -1,0 +1,15 @@
+{
+    "name": "somia/testng",
+    "autoload": {
+        "psr-4": {
+            "Somia\\Testng\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "somia213",
+            "email": "somiaamer8@gmail.com"
+        }
+    ],
+    "require": {}
+}
