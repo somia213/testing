@@ -30,7 +30,7 @@ class CalculatorTest extends TestCase{
      //     $this->assertEquals($r,null,"error in fact(negative)");
 
 
-              $r=fact(1);
+              $r=fact(0);
               $this->assertEquals($r,1,"error in fact(0)");
 
                $r=fact(5);
