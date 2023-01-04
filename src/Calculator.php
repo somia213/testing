@@ -37,11 +37,11 @@
 
          function fact($n){
              
-            if($n>1 or $n=0 or $n=1){
+            if($n<>1){
                $f=$n*fact($n-1);
                return $f;
             }else{
-               return null;
+               return 1;
             }
          }
     
