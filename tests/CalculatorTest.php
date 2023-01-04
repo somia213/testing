@@ -21,10 +21,13 @@ class CalculatorTest extends TestCase{
          $this->assertEquals($r,120,"error in fact(5)");
 
          $r=$n->fact(6);
-         $this->assertEquals($r,144,"error in fact(6)");
+         $this->assertEquals($r,720,"error in fact(6)");
 
-         $r=$n->fact(-10);
-         $this->assertEquals($r,"null","error in fact(negative)");
+         $r=$n->fact("ggggg");
+         $this->assertEquals($r,null,"error in fact(negative)");
+
+         $r=$n->fact(-11);
+         $this->assertEquals($r,null,"error in fact(negative)");
 
 
      }
