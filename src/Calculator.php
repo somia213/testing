@@ -1,10 +1,10 @@
 <?php 
-class Calculator{
+//class Calculator{
     // public function Add($a,$b){
     //      return $a+$b;
     // }
    
-       public function fact($n){
+      // public function fact($n){
 
         // this function not read parameter that pass through it 
 
@@ -23,19 +23,32 @@ class Calculator{
       //************************ */
       // second way 
       //********************* */
-           if(is_int($n) && $n>=0){
-            $f=1;
-             for($i = 2 ; $i <= $n ; $i++){
-               $f *=$i;
-             }
-             return $f;
-           }else{
-            return null;
-           }
-    }
+         //   if(is_int($n) && $n>=0){
+         //    $f=1;
+         //     for($i = 2 ; $i <= $n ; $i++){
+         //       $f *=$i;
+         //     }
+         //     return $f;
+         //   }else{
+         //    return null;
+         //   }
+         //}
+     
+
+         function fact($n){
+             
+            if($n>1 or $n=0 or $n=1){
+               $f=$n*fact($n-1);
+               return $f;
+            }else{
+               return null;
+            }
+         }
+    
 
     
     
-}
+
+
 
 ?>
